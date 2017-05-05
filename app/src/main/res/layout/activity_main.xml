@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/submit_state_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit_state_chart"
+       />
+    <Button
+        android:id="@+id/slid_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="slid_menu"/>
+    <Button
+        android:id="@+id/leak_canary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="leak_canary"/>
+    <Button
+        android:id="@+id/animation_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="animation_circle"/>
+    <Button
+        android:id="@+id/font_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="font_view"/>
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="commit_btn"/>
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

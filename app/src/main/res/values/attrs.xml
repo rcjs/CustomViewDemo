@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorTrackTextView">
+        <attr name="originColor" format="color"/>
+        <attr name="changeColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TrackIndicatorView">
+        <attr name="tabVisibleNums" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="chart">
+        <attr name="default_boxColor" format="color"/>
+        <attr name="default_boxWidth" format="dimension"/>
+        <attr name="month_tag_textSize" format="dimension"/>
+        <attr name="month_tag_textColor" format="color"/>
+        <attr name="week_tag_textSize" format="dimension"/>
+        <attr name="week_tag_textColor" format="color"/>
+        <attr name="info_textSize" format="dimension"/>
+        <attr name="info_textColor" format="color"/>
+        <attr name="month_tag_padding" format="dimension"/>
+        <attr name="week_tag_padding" format="dimension"/>
+        <attr name="left_margin"  format="dimension"/>
+        <attr name="top_margin"  format="dimension"/>
+        <attr name="color_tag_textSize"  format="dimension"/>
+        <attr name="color_tag_textColor"  format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="rcjs.com.customviewdemo">
+
+    <application
+        android:name=".Constans.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SubmitStateChartActivity"
+            android:screenOrientation="landscape"
+            >
+
+        </activity>
+        <activity
+            android:name=".ui.activity.SlideMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoAppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.LeakCanaryActivity"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <activity android:name=".ui.activity.ViewPagerActivity">
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.AnimationCircleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTheme"></activity>
+
+        <activity
+            android:name=".ui.activity.FontViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTheme"></activity>
+
+        <activity android:name=".ui.activity.CommitButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTheme"></activity>
+
+    </application>
+
+</manifest>

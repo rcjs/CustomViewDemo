@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:chart="http://schemas.android.com/apk/res-auto"
+    tools:context="rcjs.com.submitstatechart.ui.MainActivity">
+
+    <rcjs.com.submitstatechart.widget.SubmitStateChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        chart:color_tag_textColor="@android:color/darker_gray"
+        chart:color_tag_textSize="10sp"
+        chart:default_boxColor="#FFEEEEEE"
+        chart:default_boxWidth="2dp"
+        chart:info_textColor="#CC888888"
+        chart:info_textSize="10sp"
+        chart:left_margin="42dp"
+        chart:month_tag_padding="2dp"
+        chart:month_tag_textColor="@android:color/darker_gray"
+        chart:month_tag_textSize="10sp"
+        chart:top_margin="42dp"
+        chart:week_tag_padding="2dp"
+        chart:week_tag_textColor="@android:color/darker_gray"
+        chart:week_tag_textSize="10sp"
+        />
+
+</RelativeLayout>

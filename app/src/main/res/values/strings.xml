@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomViewDemo</string>
+    <string name="navigation_drawer_open">打开导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+
+    <string name="nav_devicelist">设备列表</string>
+    <string name="nav_devicedata">基础数据</string>
+    <string name="nav_devicefix">管理维护</string>
+    <string name="nav_deviceChart">统计报表</string>
+</resources>
