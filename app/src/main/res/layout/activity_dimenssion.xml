@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:dimenssionview="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+
+    <rcjs.com.customviewdemo.widget.DimensionView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="郑毅"
+        android:textSize="50sp"
+        dimenssionview:info_dp="3.5dp"
+        dimenssionview:info_px="3.5px"
+        dimenssionview:info_sp="3.5sp"
+        />
+
+
+</LinearLayout>

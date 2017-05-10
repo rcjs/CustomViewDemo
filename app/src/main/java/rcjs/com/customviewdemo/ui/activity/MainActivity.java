@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.slid_menu, R.id.submit_state_chart,R.id.leak_canary,R.id.animation_circle,R.id.font_view,R.id.commit_btn})
+    @OnClick({R.id.slid_menu, R.id.submit_state_chart,R.id.leak_canary,R.id.animation_circle,R.id.font_view,R.id.commit_btn,R.id.dimenssion})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.slid_menu:
@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.commit_btn:
                 openIntent(CommitButtonActivity.class);
+            case R.id.dimenssion:
+                openIntent(DimenssionActivity.class);
             default:
                 break;
         }

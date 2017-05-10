@@ -25,4 +25,11 @@
         <attr name="color_tag_textSize"  format="dimension"/>
         <attr name="color_tag_textColor"  format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="dimenssionview">
+        <attr name="info_dp" format="dimension"/>
+        <attr name="info_px" format="dimension"/>
+        <attr name="info_sp" format="dimension"/>
+    </declare-styleable>
+
 </resources>

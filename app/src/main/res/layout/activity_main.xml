@@ -45,6 +45,12 @@
         android:layout_height="wrap_content"
         android:text="commit_btn"/>
 
+    <Button
+        android:id="@+id/dimenssion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dimenssion"/>
+
 </LinearLayout>
 </ScrollView>
 </RelativeLayout>

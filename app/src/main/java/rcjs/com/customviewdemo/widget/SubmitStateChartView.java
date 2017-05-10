@@ -60,22 +60,22 @@ public class SubmitStateChartView extends View {
     /**
      * 月份标注距离格子的距离
      */
-    private int monthTextPadding = 0;
+    private float monthTextPadding = 0;
 
     /**
      * 周期标注距离格子的距离
      */
-    private int weekTextPadding = 0;
+    private float weekTextPadding = 0;
 
     /**
      * 月份标注距离顶部的距离
      */
-    private int monthTextMargin = 0;
+    private float monthTextMargin = 0;
 
     /**
      * 周期标注距离左侧的距离
      */
-    private int weekTextMargin = 0;
+    private float weekTextMargin = 0;
     /**
      * 所有周的总列数
      **/
@@ -93,17 +93,17 @@ public class SubmitStateChartView extends View {
     private float downX;//按下的点的X坐标
     private float downY;//按下的点的Y坐标
     private DayInfo clickDay;//按下的点所对应的天
-    private int mBoxPaintSize;
+    private float mBoxPaintSize;
     private int mBoxPaintColor;
-    private int mMonthTextPaintSize;
+    private float mMonthTextPaintSize;
     private int mMonthTextPaintColor;
-    private int mWeekTextPaintSize;
+    private float mWeekTextPaintSize;
     private int mWeekTextPaintColor;
 
-    private int mInfoPaintSize;
+    private float mInfoPaintSize;
     private int mInfoPaintColor;
     private float mTextLength;
-    private int mTextColorPaintSize;
+    private float mTextColorPaintSize;
     private int mTextColorPaintColor;
 
     public SubmitStateChartView(Context context) {
@@ -141,19 +141,19 @@ public class SubmitStateChartView extends View {
      */
     private void initPaint(Context context, AttributeSet attrs) {
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.chart);
-        mBoxPaintSize = array.getDimensionPixelSize(R.styleable.chart_default_boxWidth, 2);
+        mBoxPaintSize = array.getDimension(R.styleable.chart_default_boxWidth, 2);
         mBoxPaintColor = array.getColor(R.styleable.chart_default_boxColor, DEFAULT_BOX_COLOR);
-        mMonthTextPaintSize = array.getDimensionPixelSize(R.styleable.chart_month_tag_textSize, 12);
+        mMonthTextPaintSize = array.getDimension(R.styleable.chart_month_tag_textSize, 12);
         mMonthTextPaintColor = array.getColor(R.styleable.chart_month_tag_textColor, Color.GRAY);
-        mWeekTextPaintSize = array.getDimensionPixelSize(R.styleable.chart_week_tag_textSize, 12);
+        mWeekTextPaintSize = array.getDimension(R.styleable.chart_week_tag_textSize, 12);
         mWeekTextPaintColor = array.getColor(R.styleable.chart_week_tag_textColor, Color.GRAY);
-        mInfoPaintSize = array.getDimensionPixelSize(R.styleable.chart_info_textSize, 12);
+        mInfoPaintSize = array.getDimension(R.styleable.chart_info_textSize, 12);
         mInfoPaintColor = array.getColor(R.styleable.chart_info_textColor, 0xCC888888);
-        monthTextPadding = array.getDimensionPixelSize(R.styleable.chart_month_tag_padding, 0);
-        weekTextPadding = array.getDimensionPixelSize(R.styleable.chart_week_tag_padding, 0);
-        monthTextMargin = array.getDimensionPixelSize(R.styleable.chart_top_margin, 0);
-        weekTextMargin = array.getDimensionPixelSize(R.styleable.chart_left_margin, 0);
-        mTextColorPaintSize = array.getDimensionPixelSize(R.styleable.chart_color_tag_textSize, 12);
+        monthTextPadding = array.getDimension(R.styleable.chart_month_tag_padding, 0);
+        weekTextPadding = array.getDimension(R.styleable.chart_week_tag_padding, 0);
+        monthTextMargin = array.getDimension(R.styleable.chart_top_margin, 0);
+        weekTextMargin = array.getDimension(R.styleable.chart_left_margin, 0);
+        mTextColorPaintSize = array.getDimension(R.styleable.chart_color_tag_textSize, 12);
         mTextColorPaintColor = array.getColor(R.styleable.chart_color_tag_textColor, Color.GRAY);
 
         //方格画笔
